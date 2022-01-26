@@ -1,0 +1,16 @@
+{% extends "base.html" %} {% block content %}
+<!-- request is already apart of the context in the settings of django -->
+{% if not request.user.is_authenticated %}
+
+<form action="." method="POST">
+  {% csrf_token %} {% form.as_p %}
+  <input type="submit" value="Register" />
+</form>
+<p>Already registered? <a href="/login/">Login</a>?</p>
+{% else %}
+
+<p>
+  You are already logged in. Would you like to <a href="/logout/">logout</a>?
+</p>
+
+{% endif %} {% endblock content %}

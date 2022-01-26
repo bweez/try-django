@@ -1,0 +1,5 @@
+{% extends "base.html" %} {% block content %} {% if not created %}
+
+<form action="." method="POST">{% csrf_token%} {{ form.as_p }}</form>
+
+{% else %} {% endif %} {% endblock content %}

@@ -1,0 +1,19 @@
+<!-- 
+This is an example of a template extending another one 
+This demonstrates how Django handles:
+    - html templating 
+    - inheritance  
+-->
+{% extends "base.html" %}
+
+<!-- content can be called anything, it is a variable -->
+{% block content %}
+<h1>{{ object.title }} (id: {{ id }})!</h1>
+<p>{{ content }}</p>
+
+<ul>
+  {% for x in articles %} {% if x.title %}
+  <li>{{ x.title }} - <a href="/articles/{{ x.id }}">{{ x.content }}</a></li>
+  {% endif %} {% endfor %}
+</ul>
+{% endblock content %}
