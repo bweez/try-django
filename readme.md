@@ -29,6 +29,15 @@ Here is a one-liner that can be run from the cli.
 python -c 'from django.core.management.utils import get_random_secret_key; print(get_random_secret_key())
 ```
 
+### Run Migrations to Add or Update DB models
+
+```bash
+# create new migrations based on model changes
+python manage.py makemigrations
+# then run migrations
+python manage.py migrate
+```
+
 ### Deploy to Digital Ocean
 
 [Reference blog post](https://www.codingforentrepreneurs.com/blog/deploy-django-to-digitalocean-app-platform)

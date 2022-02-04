@@ -1,4 +1,5 @@
 .env
+db.sqlite3
 
 # Github boilerplate .gitignore for python
 
