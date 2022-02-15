@@ -39,7 +39,7 @@ urlpatterns = [
     path('articles/', article_search_view),
     path('articles/create/', article_create_view),
     # how to dynamically add the id str
-    path('articles/<str:id>', article_details_view),
+    path('articles/<slug:slug>', article_details_view),
     # re_path(r'articles/(?P<id>\d+/$', home_view),  # alternate pathing with a regex
     path('login/', login_view),
     path('logout/', logout_view),

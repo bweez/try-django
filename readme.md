@@ -2,12 +2,12 @@
 
 ## Purpose
 
-I am learning Django. This is a practice project. I have lots of notes and comments I generally would not leave in.
+I am learning Django. This is a practice project.
 
 ## Reference Guides
 
-- [YouTube Playlist](https://www.youtube.com/playlist?list=PLEsfXFp6DpzRMby_cSoWTFw8zaMdTEXgL)
-- [Deploy to Digital Ocean](https://kirr.co/cv0e81)
+- [Try Django 3.2 Playlist - YouTube](https://www.youtube.com/playlist?list=PLEsfXFp6DpzRMby_cSoWTFw8zaMdTEXgL)
+- [Try Django 3.2 Deploy to Digital Ocean](https://kirr.co/cv0e81)
 
 ### Activate a virtual env in the current directory for Mac
 
@@ -19,6 +19,12 @@ source bin/activate
 
 ```bash
 python manage.py test
+```
+
+### Run server locally
+
+```bash
+python manage.py runserver
 ```
 
 ### Generate a Django Secret Key

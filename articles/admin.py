@@ -7,7 +7,7 @@ from .models import Article
 
 class ArticleAdmin(admin.ModelAdmin):
     search_fields = ['title', 'content']
-    list_display = ['id', 'title', 'timestamp', 'updated']
+    list_display = ['id', 'title', 'slug', 'timestamp', 'updated']
 
 
 admin.site.register(Article, ArticleAdmin)
